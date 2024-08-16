@@ -1,0 +1,79 @@
+body.login {
+	background-color: #141520;
+}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {
+    background-image: url("../images/magicraft.png");
+    background-size: 355px 70px;
+    width: 355px;
+    height: 70px;
+    margin-left: -16px;
+}
+body.login div#login form#loginform {
+	padding: 26px 24px 32px;
+}
+body.login div#login form#loginform p {
+	color: #3c3b49;
+}
+body.login div#login form#loginform p label {
+	color: #3c3b49;
+}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {
+	background-color: #e8e9ef;
+	border: none;
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(11, 44, 53, 0.75);
+	-moz-box-shadow:    0px 0px 0px 0px rgba(11, 44, 53, 0.75);
+	box-shadow:         0px 0px 0px 0px rgba(11, 44, 53, 0.75);
+	margin-top: 6px;
+}
+body.login div#login form#loginform input#user_pass {
+	background-color: #e8e9ef;
+	border: none;
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(11, 44, 53, 0.75);
+	-moz-box-shadow:    0px 0px 0px 0px rgba(11, 44, 53, 0.75);
+	box-shadow:         0px 0px 0px 0px rgba(11, 44, 53, 0.75);
+	margin-top: 6px;
+}
+body.login div#login form#loginform p.forgetmenot {
+	margin-top: 12px;
+}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {
+	margin-top: 12px;
+}
+body.login div#login form#loginform p.submit input#wp-submit {
+
+	background-color: #337c9e;
+	border: 0;
+	-webkit-border-radius: 0px 0 6px 6px;
+	-moz-border-radius: 0px 0 6px 6px;
+	border-radius: 0px 0 6px 6px;
+	-webkit-box-shadow: 0px 6px 0px 0px rgba(11, 44, 53, 0.75);
+	-moz-box-shadow:    0px 6px 0px 0px rgba(11, 44, 53, 0.75);
+	box-shadow:         0px 6px 0px 0px rgba(11, 44, 53, 0.75);
+	padding: 8px 18px;
+	height: auto;
+	width: auto;
+	margin-bottom: 6px;
+}
+body.login div#login form#loginform p.submit input#wp-submit:hover{
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(11, 44, 53, 0.75);
+	-moz-box-shadow:    0px 4px 0px 0px rgba(11, 44, 53, 0.75);
+	box-shadow:         0px 4px 0px 0px rgba(11, 44, 53, 0.75);
+	background-color: #307392;
+	margin-top: 2px;
+	margin-bottom: 4px;
+}
+body.login div#login form#loginform p.submit input#wp-submit:active{
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(11, 44, 53, 0.75);
+	-moz-box-shadow:    0px 0px 0px 0px rgba(11, 44, 53, 0.75);
+	box-shadow:         0px 0px 0px 0px rgba(11, 44, 53, 0.75);
+	margin-top: 6px;
+	margin-bottom: 0px;
+}
+body.login div#login p#nav {}
+body.login div#login p#nav a {}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a {}

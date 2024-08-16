@@ -1,0 +1,29 @@
+/******************************************************************
+Site Name: Magicraft
+Author: Creepy studio
+
+Stylesheet: Forum layout
+
+/****************************************************************/
+.full-width{
+	.ninecol{
+		width: 100%;
+	}
+
+	.sidebar{
+		width: 100%;
+
+		.widget{
+			width: 48.5%;
+			float: left;
+
+			&:nth-child(2n){
+				margin: 0 0 14px 1.4%;
+			}
+			&:nth-child(2n+1){
+				clear: left;
+				margin: 0 1.4% 14px 0;
+			}
+		}
+	}
+}

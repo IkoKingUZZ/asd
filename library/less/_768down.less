@@ -1,0 +1,150 @@
+/* Responsive Menu */
+.js .menu-wrapper nav[role=navigation] {
+    overflow:hidden;
+    max-height: 0em;
+
+} 
+.js .menu-wrapper nav[role=navigation].active {
+    max-height: 1136px;
+    transition: max-height 0.5s ease-out;
+}
+
+.nav li ul.sub-menu .sub-menu{ background: none;  }
+
+.menu-wrapper{   
+
+    a.menu-link{
+        display:block;
+        width:auto;
+        text-align: right;
+        padding: 22px 30px 22px 10px;
+        border:none;
+        margin:0;
+
+        &.active .ico-caret-down {
+            background: url('../images/menu-close.png') no-repeat center center;
+            background-size: 20px; 
+        }
+
+        .ico-caret-down{
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            display: block;
+            height: 20px;
+            width: 20px;
+            background: url('../images/menu-burger.png') no-repeat center center;
+            background-size: 20px; 
+        }
+    } 
+
+    #main-menu{
+    }
+    ul.nav  li {
+        display:block;
+        border:none;
+
+        .sub-menu a{
+            border-bottom: none;
+        }
+    }
+    .nav > li{
+        padding:0px;
+        border:none;
+        &+li{
+        }
+    } 
+    .nav a{
+        padding:0.6em 0;
+        margin:0px 3em;
+        border:none;
+        &:hover{
+            background: none;
+        }
+
+
+    } 
+    .nav .rightalign{
+         float:none;
+    }
+    li + li a:before{
+        content:"";
+    }
+
+    /* unhide the 2nd level */
+    li:hover .sub-menu{ 
+        max-height: 0em; 
+        transition:none;      
+    } 
+    .sub-menu{   
+         box-sizing:border-box;
+        -moz-box-sizing:border-box; 
+        background:none;
+        padding-left: 8px;
+        margin-top:0;
+        display:block;
+        width: 100%;
+        li,
+        li a{
+            margin:0;
+            display:block;
+            width:100%;
+        }
+        a{
+            padding-left:0.8em;
+            &:hover{
+            }
+        }
+        li{
+        }
+        li:last-child{
+            padding:0;
+            a{
+                border:none;
+            }
+        }
+    }
+    .nav .has-subnav{
+        position:relative;
+    }    
+    li .sub-menu.active{        
+        max-height: 960px;
+        overflow:visible;
+        position:relative;
+        z-index:9;
+        transition: max-height 0.5s ease-out;
+    }
+
+    /* styling the toggle menu */
+    .toggle-link{ 
+        height:40px;
+        width: 48px; 
+        display:block;
+        position:absolute;
+        right:0px;                 
+        z-index:200;
+        font-size:0em;      
+        cursor:pointer;
+        speak: none;
+        -webkit-font-smoothing: antialiased;    
+        background: url('../images/menu-down.png') no-repeat center center;
+        background-size: 20px;   
+        &:hover{
+            transition:all 0.2s;
+            background: url('../images/menu-down.png') no-repeat center center;
+            background-size: 20px; 
+        }
+
+        &.active{
+            background: url('../images/menu-up.png') no-repeat center center;
+            background-size: 20px;   
+        }
+    }
+    /* arrow to indicate that we have subnav*/
+     .nav .menu-item-has-children > .toggle-link:after{        
+
+    }
+     .nav .menu-item-has-children  > .toggle-link.active:after{
+
+    }
+}
